@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test GeoJSON</title>
+</head>
+<body>
+
+<h2>Lecture du GeoJSON</h2>
+<pre id="resultat"></pre>
+
+<script>
+fetch("communesgemeente-belgium.geojson")
+.then(response => response.json())
+.then(data => {
+
+    let premier = data.features[0];
+
+    document.getElementById("resultat").textContent =
+        JSON.stringify(premier.properties, null, 2);
+
+})
+.catch(error => {
+    document.getElementById("resultat").textContent = error;
+});
+</script>
+
+</body>
+</html>

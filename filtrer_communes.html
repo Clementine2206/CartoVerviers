@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Créer communes.geojson</title>
+</head>
+<body>
+
+<h2>Création du fichier CartoVerviers</h2>
+<p id="resultat"></p>
+<button id="telecharger">Télécharger communes.geojson</button>
+
+<script>
+let nouveauGeoJSON;
+
+fetch("data/communesgemeente-belgium.geojson")
+.then(response => response.json())
+.then(data => {
+
+    const communesSouhaitees = [
+        "Aubel",
+        "Baelen",
+        "Dison",
+        "Herve",
+        "Jalhay",
+        "Lierneux",
+        "Limbourg",
+        "Malmedy",
+        "Olne",
+        "Pepinster",
+        "Plombières",
+        "Spa",
+        "Stavelot",
+        "Stoumont",
+        "Theux",
+        "Thimister-Clermont",
+        "Trois-Ponts",
+        "Verviers",
+        "Waimes",
+        "Welkenraedt"
+    ];
+
+    let communesVerviers = data.features.filter(feature =>
+        communesSouhaitees.includes(feature.properties.mun_name_fr[0])
+    );
+
+    nouveauGeoJSON = {
+        type: "FeatureCollection",
+        features: communesVerviers
+    };
+
+    document.getElementById("resultat").textContent =
+        communesVerviers.length + " communes prêtes.";
+
+});
+
+document.getElementById("telecharger").onclick = function() {
+
+    let fichier = new Blob(
+        [JSON.stringify(nouveauGeoJSON)],
+        {type: "application/json"}
+    );
+
+    let lien = document.createElement("a");
+    lien.href = URL.createObjectURL(fichier);
+    lien.download = "communes.geojson";
+    lien.click();
+
+};
+</script>
+
+</body>
+</html>
