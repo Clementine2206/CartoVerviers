@@ -230,6 +230,24 @@ Jeudi : 13h30 – 18h00
     pmr: "À vérifier",
     horaires: "Du lundi au vendredi de 8h30 à 16h",
     prochaineEtape: "Contact avec la coordination et vérifier l’existence d’un espace adéquat et disponible préservé du flux habituel"
+},
+
+{
+    nom: "CPAS d'Olne",
+    categorie: "Action sociale",
+    lat: 50.591214,
+    lng: 5.750216,
+    adresse: "Rue du Village 89, 4877 Olne",
+    contact: "Directrice Mme Marianne Busin",
+    telephone: "087 26 78 89",
+    email: "cpas@olne.be",
+    environnement: "À vérifier",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "Oui",
+    pmr: "À vérifier",
+    horaires: "Lundi, mardi, jeudi et vendredi de 9h à 11h. Fermé le mercredi",
+    prochaineEtape: "Contact avec la direction et vérifier l’existence d’un espace adéquat et disponible préservé du flux habituel. Disponibilité hors heures ouvrables à négocier"
 }
 
 ];    
