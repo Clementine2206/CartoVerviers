@@ -416,6 +416,13 @@ legende.addTo(map);
     ${service.prochaineEtape}
 `)
 
+// Marqueur antenne Latitude J Montzen
+L.marker([50.706705, 5.961617])
+    .addTo(map)
+    .bindTooltip("Antenne Latitude J Montzen", {
+        direction: "top"
+    });
+
         });
         // Outil temporaire pour récupérer des coordonnées
 map.on('click', function(e) {
