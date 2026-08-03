@@ -15,3 +15,18 @@ h1 {
     height: calc(100vh - 70px);
     width: 100%;
 }
+
+.legend {
+    background: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.legend h4 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+}

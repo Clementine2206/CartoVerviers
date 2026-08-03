@@ -243,16 +243,41 @@ fetch("data/communes.geojson")
 
     .then(data => {
 
+const zonePoliceHerve = [
+    "Aubel",
+    "Baelen",
+    "Herve",
+    "Limbourg",
+    "Olne",
+    "Plombières",
+    "Thimister-Clermont",
+    "Welkenraedt"
+];
+
 L.geoJSON(data, {
 
     interactive: false,
 
-    style: {
+style: function(feature) {
+
+    let nomCommune = feature.properties.mun_name_fr[0];
+
+    if (zonePoliceHerve.includes(nomCommune)) {
+        return {
+            color: "#2E7D32",
+            weight: 2,
+            fillColor: "#66BB6A",
+            fillOpacity: 0.45
+        };
+    }
+
+    return {
         color: "#0066cc",
         weight: 2,
         fillColor: "#66b3ff",
         fillOpacity: 0.2
-    },
+    };
+},
 
     onEachFeature: function(feature, layer) {
 
@@ -268,6 +293,41 @@ L.geoJSON(data, {
 
 }).addTo(map);
 
+// Légende
+const legende = L.control({ position: "bottomright" });
+
+legende.onAdd = function () {
+
+    const div = L.DomUtil.create("div", "info legend");
+
+    div.innerHTML = `
+        <h4>Légende</h4>
+
+        <div><span style="
+            display:inline-block;
+            width:18px;
+            height:18px;
+            background:#66BB6A;
+            border:1px solid #2E7D32;
+            margin-right:8px;">
+        </span>Zone de Police de Herve</div>
+
+        <div style="margin-top:6px;">
+            <span style="
+                display:inline-block;
+                width:18px;
+                height:18px;
+                background:#66b3ff;
+                border:1px solid #0066cc;
+                margin-right:8px;">
+            </span>Autres communes
+        </div>
+    `;
+
+    return div;
+};
+
+legende.addTo(map);
 
         // Ajout des services après les communes
         services.forEach(service => {
