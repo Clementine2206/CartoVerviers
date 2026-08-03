@@ -248,7 +248,25 @@ Jeudi : 13h30 – 18h00
     pmr: "À vérifier",
     horaires: "Lundi, mardi, jeudi et vendredi de 9h à 11h. Fermé le mercredi",
     prochaineEtape: "Contact avec la direction et vérifier l’existence d’un espace adéquat et disponible préservé du flux habituel. Disponibilité hors heures ouvrables à négocier"
-}
+},
+
+{
+    nom: "CPAS du Limbourg",
+    categorie: "Action sociale",
+    lat: 50.620097,
+    lng: 5.940744,
+    adresse: "Rue Oscar Thimus 1, 4830 Limbourg",
+    contact: "Directrice Mme Pauline Rombach",
+    telephone: "087 32 13 50",
+    email: "pauline.rombach@cpas-limbourg.be",
+    environnement: "À vérifier",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "Oui",
+    pmr: "Oui",
+    horaires: "Du lundi au vendredi de 8h30 à 16h00 uniquement sur rendez-vous",
+    prochaineEtape: "Contacter la direction et vérifier l’existence d’un espace adéquat et disponible préservé du flux habituel"
+},
 
 ];    
 
