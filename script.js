@@ -175,7 +175,7 @@ Mardi : 09h30 – 12h30
 Mercredi : 13h30 – 18h00
 Jeudi : 13h30 – 18h00
     `,
-    prochaineEtape: "Contacter la direction et cartographier la répartition territoriale avec Latitude J."
+    prochaineEtape: "Contacter la direction et cartographier la répartition territoriale avec Latitude J"
 },
 
 {
@@ -266,6 +266,24 @@ Jeudi : 13h30 – 18h00
     pmr: "Oui",
     horaires: "Du lundi au vendredi de 8h30 à 16h00 uniquement sur rendez-vous",
     prochaineEtape: "Contacter la direction et vérifier l’existence d’un espace adéquat et disponible préservé du flux habituel"
+},
+
+{
+    nom: "CPAS de Baelen",
+    categorie: "Action sociale",
+    lat: 50.630167,
+    lng: 5.971751,
+    adresse: "Rue de la Régence 6, 4837 Baelen",
+    contact: "Directrice Mme Sylvie Lahaye",
+    telephone: "087 76 01 13",
+    email: "info@cpasbaelen.be",
+    environnement: "À vérifier",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "À vérifier",
+    pmr: "À vérifier",
+    horaires: "Permanences les lundis, mercredis et vendredis de 8h30 à 11h30, service social accessible sur rendez-vous",
+    prochaineEtape: "Contacter la direction et vérifier l'existence d'un espace adéquat et disponible. Voir si une synergie est possible avec un autre service au sud de la commune. Disponibilité hors heures ouvrables à négocier."
 },
 
 ];    
