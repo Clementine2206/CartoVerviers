@@ -292,7 +292,7 @@ Jeudi : 13h30 – 18h00
     lat: 50.582181,
     lng: 5.859307,
     adresse: "Rue du Parc 29, 4800 Verviers",
-    contact: "Directeur général : Jérôme Bonhomme - Chef de service Urgences : Pierre Milet",
+    contact: "Directeur général Mr Jérôme Bonhomme - Chef de service Urgences Mr Pierre Milet",
     telephone: "087 21 21 11",
     email: "communication@chrverviers.be",
     environnement: "Non",
@@ -498,12 +498,45 @@ legende.addTo(map);
     ${service.prochaineEtape}
 `)
 
-// Marqueur antenne Latitude J Montzen
-L.marker([50.706705, 5.961617])
-    .addTo(map)
-    .bindTooltip("Antenne Latitude J Montzen", {
-        direction: "top"
-    });
+const antennes = [
+    {
+        nom: "Antenne Latitude J Montzen",
+        lat: 50.706705,
+        lng: 5.961617,
+        adresse: "Place Communale 7,4850 Montzen",
+        telephone: ""
+    }
+];
+
+const iconeAntenne = L.icon({
+    iconUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='32' viewBox='0 0 22 32'%3E%3Cpath d='M11 1C5.5 1 1 5.5 1 11c0 7 10 19 10 19s10-12 10-19C21 5.5 16.5 1 11 1z' fill='white' stroke='%23555555' stroke-width='2'/%3E%3Ccircle cx='11' cy='11' r='4' fill='%23555555'/%3E%3C/svg%3E",
+    iconSize: [17, 25],
+    iconAnchor: [8, 25],
+    popupAnchor: [0, -25],
+    tooltipAnchor: [0, -25]
+});
+
+antennes.forEach(antenne => {
+
+    L.marker([antenne.lat, antenne.lng], {
+        icon: iconeAntenne
+    })
+        .addTo(map)
+
+        .bindTooltip(antenne.nom, {
+            direction: "top"
+        })
+
+        .bindPopup(`
+            <strong>${antenne.nom}</strong><br><br>
+
+            <strong>Adresse :</strong><br>
+            ${antenne.adresse}<br><br>
+
+            <strong>Téléphone :</strong><br>
+            ${antenne.telephone || "Non renseigné"}
+        `);
+});
 
         });
         // Outil temporaire pour récupérer des coordonnées
