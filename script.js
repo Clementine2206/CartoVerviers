@@ -286,6 +286,24 @@ Jeudi : 13h30 – 18h00
     prochaineEtape: "Contacter la direction et vérifier l'existence d'un espace adéquat et disponible. Voir si une synergie est possible avec un autre service au sud de la commune. Disponibilité hors heures ouvrables à négocier."
 },
 
+{
+    nom: "CHR Verviers – site principal « La Tourelle »",
+    categorie: "Médical/paramédical",
+    lat: 50.582181,
+    lng: 5.859307,
+    adresse: "Rue du Parc 29, 4800 Verviers",
+    contact: "Directeur général : Jérôme Bonhomme - Chef de service Urgences : Pierre Milet",
+    telephone: "087 21 21 11",
+    email: "communication@chrverviers.be",
+    environnement: "Non",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "Oui",
+    pmr: "Oui",
+    horaires: "7j/7 H24",
+    prochaineEtape: "Réunion de concertation RéSME – CHR Verviers pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien)"
+},
+
 ];    
 
 
