@@ -308,6 +308,27 @@ const zonePoliceHerve = [
     "Welkenraedt"
 ];
 
+const zonePoliceVesdre = [
+    "Verviers",
+    "Dison",
+    "Pepinster"
+];
+
+const zonePoliceFagnes = [
+    "Spa",
+    "Theux",
+    "Jalhay"
+];
+
+const zonePoliceStavelotMalmedy = [
+    "Lierneux",
+    "Malmedy",
+    "Stavelot",
+    "Stoumont",
+    "Trois-Ponts",
+    "Waimes"
+];
+
 L.geoJSON(data, {
 
     interactive: false,
@@ -316,24 +337,53 @@ style: function(feature) {
 
     let nomCommune = feature.properties.mun_name_fr[0];
 
-    if (zonePoliceHerve.includes(nomCommune)) {
-        return {
-            color: "#2E7D32",
-            weight: 2,
-            fillColor: "#66BB6A",
-            fillOpacity: 0.45
-        };
-    }
-
+if (zonePoliceHerve.includes(nomCommune)) {
     return {
-        color: "#0066cc",
-        weight: 2,
-        fillColor: "#66b3ff",
-        fillOpacity: 0.2
+        color: "#198754",
+        fillColor: "#90EE90",
+        fillOpacity: 0.6,
+        weight: 2
     };
+}
+
+if (zonePoliceVesdre.includes(nomCommune)) {
+    return {
+        color: "#e67e22",
+        fillColor: "#f5b041",
+        fillOpacity: 0.6,
+        weight: 2
+    };
+}
+
+if (zonePoliceFagnes.includes(nomCommune)) {
+    return {
+        color: "#8e44ad",
+        fillColor: "#d2b4de",
+        fillOpacity: 0.6,
+        weight: 2
+    };
+}
+
+if (zonePoliceStavelotMalmedy.includes(nomCommune)) {
+    return {
+        color: "#c0392b",
+        fillColor: "#f1948a",
+        fillOpacity: 0.6,
+        weight: 2
+    };
+}
+
+// Couleur de sécurité si une commune n'est pas reconnue
+return {
+    color: "#3388ff",
+    fillColor: "#3388ff",
+    fillOpacity: 0.2,
+    weight: 2
+};
+
 },
 
-    onEachFeature: function(feature, layer) {
+onEachFeature: function(feature, layer) {
 
         let nomCommune = feature.properties.mun_name_fr[0];
 
@@ -347,34 +397,30 @@ style: function(feature) {
 
 }).addTo(map);
 
-// Légende
 const legende = L.control({ position: "bottomright" });
 
 legende.onAdd = function () {
-
-    const div = L.DomUtil.create("div", "info legend");
+    const div = L.DomUtil.create("div", "legend");
 
     div.innerHTML = `
-        <h4>Légende</h4>
+        <div>
+            <span class="legend-color herve"></span>
+            Zone de Police de Herve
+        </div>
 
-        <div><span style="
-            display:inline-block;
-            width:18px;
-            height:18px;
-            background:#66BB6A;
-            border:1px solid #2E7D32;
-            margin-right:8px;">
-        </span>Zone de Police de Herve</div>
+        <div>
+            <span class="legend-color vesdre"></span>
+            Zone de Police Vesdre
+        </div>
 
-        <div style="margin-top:6px;">
-            <span style="
-                display:inline-block;
-                width:18px;
-                height:18px;
-                background:#66b3ff;
-                border:1px solid #0066cc;
-                margin-right:8px;">
-            </span>Autres communes
+        <div>
+            <span class="legend-color fagnes"></span>
+            Zone de Police des Fagnes
+        </div>
+
+        <div>
+            <span class="legend-color stavelot"></span>
+            Zone de Police Stavelot-Malmedy
         </div>
     `;
 
