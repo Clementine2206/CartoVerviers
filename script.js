@@ -304,6 +304,24 @@ Jeudi : 13h30 – 18h00
     prochaineEtape: "Réunion de concertation RéSME – CHR Verviers pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien)"
 },
 
+{
+    nom: "Centre médical Thier Mère Dieu",
+    categorie: "Médical/paramédical",
+    lat: 50.592841,
+    lng: 5.868239,
+    adresse: "Thier Mère Dieu 12, 4800 Verviers",
+    contact: "Directeur Mr André Nebie – Coordinatrices Mmes Cécile Mignolet et Christine Margrève",
+    telephone: "087 30 60 90",
+    email: "info@thiermeredieu.be",
+    environnement: "Non",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "Oui",
+    pmr: "À vérifier",
+    horaires: "Du lundi au vendredi de 9h à 13h puis de 14h à 19h",
+    prochaineEtape: "Réunion de concertation RéSME – Centre médical Thier Mère Dieu pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien)"
+},
+
 ];    
 
 
@@ -505,7 +523,24 @@ const antennes = [
         lng: 5.961617,
         adresse: "Place Communale 7,4850 Montzen",
         telephone: ""
-    }
+    },
+
+    {
+    nom: "Antenne Centre médical Thier Mère Dieu Heusy",
+    lat: 50.582961,
+    lng: 5.863663,
+    adresse: "Avenue de Spa 21, 4802 Heusy",
+    telephone: "087 30 64 12"
+},
+
+{
+    nom: "Antenne Centre médical Thier Mère Dieu Pepinster",
+    lat: 50.566281,
+    lng: 5.803297,
+    adresse: "Rue Neuve 55, 4860 Pepinster",
+    telephone: "087 30 64 13"
+},
+
 ];
 
 const iconeAntenne = L.icon({
