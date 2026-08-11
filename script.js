@@ -322,6 +322,24 @@ Jeudi : 13h30 – 18h00
     prochaineEtape: "Réunion de concertation RéSME – Centre médical Thier Mère Dieu pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien)"
 },
 
+{
+    nom: "Espace Santé Meyerbeer",
+    categorie: "Médical/paramédical",
+    lat: 50.489716,
+    lng: 5.846942,
+    adresse: "Avenue Reine Astrid 232, 4900 Spa",
+    contact: "Directrice Mme Anne-Catherine Schmitz",
+    telephone: "0470 48 89 37 ou 087 22 49 27",
+    email: "coordination@espacesantemeyerbeer.be",
+    environnement: "Non",
+    personnesConfiance: "À vérifier",
+    transports: "Oui",
+    infrastructures: "Oui",
+    pmr: "Oui",
+    horaires: "Permanences médicales du lundi au vendredi de 8h30 à 18h30",
+    prochaineEtape: "Réunion de concertation RéSME – Espace Santé Meyerbeer pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien). Voir si des synergies sont possibles avec d’autres services qui leur sont partenaires"
+},
+
 ];    
 
 
