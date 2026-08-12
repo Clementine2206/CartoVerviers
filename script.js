@@ -169,13 +169,8 @@ const services = [
     transports: "Oui",
     infrastructures: "Oui",
     pmr: "À vérifier",
-    horaires: `
-Lundi : 13h30 – 18h00
-Mardi : 09h30 – 12h30
-Mercredi : 13h30 – 18h00
-Jeudi : 13h30 – 18h00
-    `,
-    prochaineEtape: "Contacter la direction et cartographier la répartition territoriale avec Latitude J"
+    horaires: "Lundi : 13h30 – 18h00 ; Mardi : 09h30 – 12h30 ; Mercredi : 13h30 – 18h00 ; Jeudi : 13h30 – 18h00",
+    prochaineEtape: "Contacter la direction et cartographier la répartition territoriale avec Latitude J."
 },
 
 {
