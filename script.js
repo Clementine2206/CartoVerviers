@@ -48,24 +48,6 @@ const services = [
 },
 
 {
-    nom: "Bureaux EMUT RéSME",
-    categorie: "Partenaire réseau",
-    lat: 50.582487,
-    lng: 5.834556,
-    adresse: "Rue Jean Koch 3, 4800 Lambermont",
-    contact: "Infirmière en chef Mme Audrey Pottier",
-    telephone: "087 10 70 04",
-    email: "audrey.pottier@fralex.be",
-    environnement: "Oui",
-    personnesConfiance: "Oui",
-    transports: "À vérifier",
-    infrastructures: "Oui",
-    pmr: "Oui",
-    horaires: "À établir",
-    prochaineEtape: "Recueillir position de l'institution. Définir le protocole d'activation interne"
-},
-
-{
     nom: "CPAS de Herve (Pôle social)",
     categorie: "Action sociale",
     lat: 50.643392,
