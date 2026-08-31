@@ -317,6 +317,24 @@ const services = [
     prochaineEtape: "Réunion de concertation RéSME – Espace Santé Meyerbeer pour définir les modalités d'utilisation par l'EMUT (lieu sécurisé vs lieu de soutien). Voir si des synergies sont possibles avec d’autres services qui leur sont partenaires"
 },
 
+{
+    nom: "Centre de santé Holi",
+    categorie: "Médical/paramédical",
+    lat: 50.627455,
+    lng: 5.847698,
+    adresse: "Rue Gelée, 1C, 4650 Chaineux",
+    contact: "Fondatrices Mmes Anne et Claire Sacré",
+    telephone: "0479 27 17 88",
+    email: "info@centreholi.be",
+    environnement: "Oui",
+    personnesConfiance: "À vérifier",
+    transports: "Non",
+    infrastructures: "Oui",
+    pmr: "Oui",
+    horaires: "Du lundi au vendredi de 7h30 à 18h",
+    prochaineEtape: "Rencontrer la direction du centre et visiter les locaux pour identifier quels espaces pourraient être les plus adaptés et vérifier les disponibilités. Voir si une synergie est possible avec un service de taxi social."
+},
+
 ];    
 
 
