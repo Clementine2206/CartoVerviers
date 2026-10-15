@@ -335,6 +335,23 @@ const services = [
     prochaineEtape: "Rencontrer la direction du centre et visiter les locaux pour identifier quels espaces pourraient être les plus adaptés et vérifier les disponibilités. Voir si une synergie est possible avec un service de taxi social."
 },
 
+{
+nom: 'Hôpital de Jour "La Parenthèse"',
+categorie: "Jeunesse",
+lat: 50.579379,
+lng: 5.839574,
+adresse: "Rue de Pepinster 76, 4800 Verviers",
+contact: "Coordinateur Mr Christophe Brandt",
+telephone: "087 26 08 60",
+email: "hje@fralex.be",
+environnement: "Non",
+personnesConfiance: "Oui",
+transports: "Oui",
+infrastructures: "Oui",
+pmr: "Oui",
+horaires: "Du lundi au vendredi de 8h30 à 16h30",
+prochaineEtape: "Voir avec la CPFA si un accord est possible et si un local dédié pourrait convenir"
+},
 ];    
 
 
