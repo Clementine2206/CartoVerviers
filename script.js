@@ -571,6 +571,13 @@ const antennes = [
     telephone: "087 30 64 13"
 },
 
+{
+nom: "Antenne CHRV L'espace Marne",
+lat: 50.581288,
+lng: 5.858073,
+adresse: "Rue de la Marne 4, 4800 Verviers",
+telephone: "1733 (centrale de garde)"
+},
 ];
 
 const iconeAntenne = L.icon({
